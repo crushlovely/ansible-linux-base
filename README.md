@@ -3,32 +3,32 @@ linux_base
 
 Update apt and upgrade all packages.  Also, installs the following packages:
 
-  * git
-  * ntp
-  * unattended-upgrades
-  * build-essential
-  * libreadline6
-  * libreadline6-dev
-  * curl
-  * zlib1g
-  * zlib1g-dev
-  * libssl-dev
-  * libyaml-dev
-  * libsqlite3-dev
-  * sqlite3
-  * libxml2-dev
-  * libxslt1-dev
-  * autoconf
-  * libc6-dev
-  * libncurses5-dev
-  * automake
-  * libtool
-  * bison
-  * pkg-config
+* git
+* ntp
+* unattended-upgrades
+* build-essential
+* libreadline6
+* libreadline6-dev
+* curl
+* zlib1g
+* zlib1g-dev
+* libssl-dev
+* libyaml-dev
+* libsqlite3-dev
+* sqlite3
+* libxml2-dev
+* libxslt1-dev
+* autoconf
+* libc6-dev
+* libncurses5-dev
+* automake
+* libtool
+* bison
+* pkg-config
 
- This role is used as the foundation to Ruby and Node web apps.
+This role is used as the foundation to Ruby and Node web apps.
 
- ```
+```
 - name: Base | Update apt
   apt: update_cache=yes
   sudo: yes
@@ -75,7 +75,7 @@ Update apt and upgrade all packages.  Also, installs the following packages:
 - name: Base | Take owenership of /tmp
   shell: sudo chown deploy:deploy /tmp
   sudo: yes
- ```
+```
 
 Requirements
 -----------
