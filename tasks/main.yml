@@ -37,10 +37,3 @@
 - name: Base | Setup Time Zone
   template: src=timezone.j2 dest=/etc/timezone
   sudo: yes
-
-- name: Base | Take owenership of /srv
-  shell: sudo chown deploy:deploy /srv
-  sudo: yes
-
-- name: Base | Take owenership of /tmp
-  shell: sudo chown deploy:deploy /tmp
