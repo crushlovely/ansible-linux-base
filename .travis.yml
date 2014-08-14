@@ -9,4 +9,4 @@ install:
 script:
   - echo localhost > inventory
   - ansible-playbook --syntax-check -i inventory test.yml
-  - ansible-playbook -i inventory test.yml --connection=local --sudo --skip-tags=Upgrade
+  - ansible-playbook -i inventory test.yml --connection=local --sudo --skip-tags=Upgrade Apt

@@ -1,9 +1,9 @@
 ---
-- name: Base | Update apt
+- name: Update Apt
   apt: update_cache=yes
   sudo: yes
 
-- name: Base | Ensure build-essential is installed
+- name: Ensure Build-Essential is Installed
   apt: pkg={{ item }} state=latest
   sudo: yes
   with_items:
@@ -30,10 +30,10 @@
     - bison
     - pkg-config
 
-- name: Base | Upgrade apt
+- name: Upgrade Apt
   apt: upgrade=safe
   sudo: yes
 
-- name: Base | Setup Time Zone
+- name: Setup Time Zone
   template: src=timezone.j2 dest=/etc/timezone
   sudo: yes
