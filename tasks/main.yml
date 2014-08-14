@@ -33,7 +33,7 @@
 - name: Upgrade Apt
   apt: upgrade=safe
   sudo: yes
-  tag:
+  tags:
     - Upgrade Apt
 
 - name: Setup Time Zone
