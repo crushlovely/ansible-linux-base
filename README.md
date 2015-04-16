@@ -1,7 +1,7 @@
 # Ansible Role For A Base Linux System
 
-[![Build Status](http://img.shields.io/travis/crushlovely/ansible-linux-base.svg?style=flat)](https://travis-ci.org/crushlovely/ansible-linux-base)
-[![Current Version](http://img.shields.io/github/release/crushlovely/ansible-linux-base.svg?style=flat)](https://galaxy.ansible.com/list#/roles/1180)
+[![Build Status](https://circleci.com/gh/crushlovely/ansible-linux-base.svg?style=shield)](https://github.com/crushlovely/ansible-linux-base)
+[![Current Version](http://img.shields.io/github/release/crushlovely/ansible-linux-base.svg?style=flat)](https://galaxy.ansible.com/list#/roles/1362)
 
 This Ansible role that updates `apt` and upgrades all packages. It then installs the following packages:
 
@@ -50,7 +50,7 @@ Once this role is installed on your system, include it in the roles list of your
 ---
 - hosts: localhost
   roles:
-    - { role: crushlovely.linux-base }
+    - crushlovely.linux-base
 ```
 
 ## Dependencies
