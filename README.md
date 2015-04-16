@@ -33,7 +33,7 @@ Finally it sets the default timezone for the server.  We use this as the base im
 ## Installation
 
 ``` bash
-$ ansible-galaxy install crushlovely.linux-base
+$ ansible-galaxy install crushlovely.linux-base,v1.0.0
 ```
 
 ## Variables

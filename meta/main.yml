@@ -2,15 +2,17 @@
 galaxy_info:
   author: Pablo Castillo
   company: Crush & Lovely
-  description: Apt packages for Ubuntu 12.04LTS or greater
+  description: Updates Apt packages for Ubuntu 12.04LTS or greater
   license: MIT
   min_ansible_version: 1.2
   platforms:
     - name: Ubuntu
       versions:
-        - precise
+        - Precise
+        - Trusty
   categories:
     - development
     - packaging
     - system
 dependencies: []
+version: 2.0.0

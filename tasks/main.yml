@@ -33,8 +33,6 @@
 - name: Upgrade Apt
   apt: upgrade=safe
   sudo: yes
-  tags:
-    - Upgrade Apt
 
 - name: Setup Time Zone
   template: src=timezone.j2 dest=/etc/timezone
