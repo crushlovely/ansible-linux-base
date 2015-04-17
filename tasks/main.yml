@@ -3,32 +3,10 @@
   apt: update_cache=yes
   sudo: yes
 
-- name: Ensure Build-Essential is Installed
+- name: Install specified packages
   apt: pkg={{ item }} state=latest
   sudo: yes
-  with_items:
-    - git
-    - ntp
-    - unattended-upgrades
-    - build-essential
-    - libreadline6
-    - libreadline6-dev
-    - curl
-    - zlib1g
-    - zlib1g-dev
-    - libssl-dev
-    - libyaml-dev
-    - libsqlite3-dev
-    - sqlite3
-    - libxml2-dev
-    - libxslt1-dev
-    - autoconf
-    - libc6-dev
-    - libncurses5-dev
-    - automake
-    - libtool
-    - bison
-    - pkg-config
+  with_items: linux_base.packages
 
 - name: Upgrade Apt
   apt: upgrade=safe
