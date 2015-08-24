@@ -6,7 +6,8 @@
 - name: Install specified packages
   apt: pkg={{ item }} state=latest
   sudo: yes
-  with_items: linux_base.packages
+  with_items:
+    - "{{ linux_packages }}"
 
 - name: Upgrade Apt
   apt: upgrade=safe
