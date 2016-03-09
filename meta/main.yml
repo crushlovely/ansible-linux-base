@@ -8,11 +8,10 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - Precise
-        - Trusty
+        - precise
+        - trusty
   categories:
-    - development
-    - packaging
+    - application
     - system
 dependencies: []
 version: 2.1.0
